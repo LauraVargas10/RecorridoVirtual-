@@ -1,0 +1,58 @@
+body {
+   background-image: url("assets/pajaro.png");
+}
+title {
+    font-family: 'Fleur De Leah', cursive;
+    color: black;
+    animation-name: animación3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+title {
+    font-family: 'Fleur De Leah', cursive;
+    color: black;
+    animation-name: animación3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+img {
+    width: 50%;
+    height: auto;
+}
+p {
+    font-family:fantasy
+}
+h1 {
+    font-family: mea culpa, cursive;
+    font-size: 80px;
+     animation-name: animación3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+h1:hover {
+    color: rgba(255, 255, 255, 0.92);
+    background-color: #2E7D32;
+
+    animation-name: animación2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+title {
+    font-family: 'Fleur De Leah', cursive;
+    color: black;
+    animation-name: animación3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.video1nuevap{
+    position:right;
+    top: 60px;
+    font-size: 40px;
+}
+.enlace {
+    position:relative;
+    top: 60px;
+    font-size: 40px;
+}

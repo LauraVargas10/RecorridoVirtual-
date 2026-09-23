@@ -1,28 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
 body {
-    background-color:rgb(195,203,110)
+    background-color: chocolate;
+    color: black;
+    padding-bottom: 80px;
+}
+title {
+    font-family: 'Fleur De Leah', cursive;
+    color: black;
+    animation-name: animación3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+img {
+    width: 50%;
+    height: auto;
+}
+p {
+    font-family:fantasy
+}
+h1 {
+    font-family: mea culpa, cursive;
+    font-size: 80px;
+     animation-name: animación3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
 }
 
-h1 {
-    font-family: Helvetica;
-    color: #000000;
-    font: size 100px;
-    animation-name: cambioFuente;
-    animation-duration: 0.5s;
+h1:hover {
+    color: rgba(255, 255, 255, 0.92);
+    background-color: #2E7D32;
+
+    animation-name: animación2;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
-p {
-    font-family:Arial;
-    color: #000000;
+#galeria1{
+
+    background-color: #FBC02D; 
+    width: 90%;
+    border: solid 4px #FFFFFF;
+
+}
+#galeria1:hover {
+    color: rgba(255, 255, 255, 0.92);
+    background-color: #2E7D32;
+
+    animation-name: animación1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#galeria{
+
+    background-color: rgba(251, 192, 45, 0.941);
+    width: 80%;
+    border: solid 4px #FFFFFF;
+
+    animation-name: animación1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+#galeria:hover {
+    color: rgba(255, 255, 255, 0.92);
+    background-color: #7B1FA2;
+}
+.foto{
+    width: 40%;
+}
+.espacionuevapágina{
+    position:relative;
+    top: 60px;
+    font-size: 40px;
 }
 
-p2{
-    font-family: arial;
-    color:#000000;
+.enlace{
+    position:relative;
+    top: 60px;
+    font-size: 40px;
 }
 
-@keyframes cambioFuente{
-    0% {font-family:Arial}
-    50%{font-family:Times}
-    100%{font-family:sans-serif}
+.video1nuevap{
+    position:right;
+    top: 60px;
+    font-size: 40px;
+}
+
+@keyframes animación1 {
+    0% { background-color: #FBC02D; }
+    50% { background-color: #7B1FA2; }
+    100% { background-color: #FBC02D; }
+}
+
+@keyframes animación2 {
+    0% { background-color: #2E7D32; }
+    50% { background-color: #7B1FA2; }
+    100% { background-color: #2E7D32; }
+}
+
+@keyframes animación3 {
+    0% { background-color: #FBC02D; font-size: 8em; }
+    50% { background-color: #2E7D32; font-size: 5em; }
+    100% { background-color: #FBC02D; font-size: 5em; }
+    
+}
+@media (max-width: 600px) {
+    #galeria1 {
+        width: 100%;
+    }
+    .foto {
+        width: 100%;
+        height: auto;
+    }
+
+    .circulo {
+        width: 50px;
+        height: 50px;
+        background-color: #2d8afb;
+        border-radius: 50%;
+    }
+
+
+
 }
