@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 
 body {
-    background-color: rgb(20, 153, 80);
-    color: black;
-    padding-bottom: 80px;
+     background-image: url("ASSETS/FONDO.png");
 }
 title {
     font-family: 'Fleur De Leah', cursive;
