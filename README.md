@@ -1,4 +1,4 @@
-# RecorridoVirtual-
+# RecorridoVirtual
 
 - Punto de partida, lo que ya había construido
 No empecé desde cero. Mi primera página web, ElNolugardeLau, se convirtió en la base de este nuevo proyecto. De allí copié los assets y, sobre todo, intenté entender cómo funcionaba, cómo estaba armada, qué hacía cada parte y por qué se veía como se veía.
