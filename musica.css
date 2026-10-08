@@ -1,0 +1,17 @@
+.reproductor-musica {
+    max-width: 360px;
+    margin: 16px 0;
+}
+
+.reproductor-musica iframe {
+    display: block;
+    width: min(360px, 100%);
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+}
+
+.reproductor-musica p {
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+}

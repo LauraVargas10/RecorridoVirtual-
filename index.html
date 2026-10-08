@@ -5,24 +5,54 @@
     <title>Recorrido Virtual</title>
     <meta name="description" content="El punitivismo no solo se construye desde el Estado, sino también desde los afectos cotidianos: lo que me dejó el Grupo de Prisiones.">
     <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="musica.css">
 
     </head>
     <body>
-<h1>Lo que me dejó el Grupo de Prisiones</h1>
+    <div class="reproductor-musica">
+        <iframe
+            src="https://www.youtube.com/embed/OhiTac1G71I?autoplay=1&amp;playsinline=1"
+            title="Reproductor de música de YouTube"
+            allow="autoplay; encrypted-media"
+            referrerpolicy="strict-origin-when-cross-origin"
+            loading="eager">
+        </iframe>
+        <p>Si la música no empieza automáticamente, presiona reproducir.</p>
+    </div>
+<h1 id="titulo-principal" role="button" tabindex="0">Lo que me dejó el Grupo de Prisiones</h1>
 <div>
     <p>**Los nombres en este artículo fueron cambiados con el fin de salvaguardar la identidad de las personas involucradas.</p>
 
 <p>Para los que no saben, el Grupo de Prisiones es una Clínica Jurídica donde los estudiantes de Derecho, próximos a graduarse, prestan servicio durante un año de manera gratuita a la comunidad.</p>
 
-<p>En mi caso, elegí las cárceles. Pues, después de mucha rumiación, encontré entre mi planeación de segundo semestre, mi sueño de entrar a esta clínica y estando en octavo, ese sueño seguía ahí.</p>
-<p>Acá les tengo que hacer un spoiler y contarles lo aprendido cuando digo que el punitivismo (el ojo por ojo) no solo se construye desde el Estado, sino desde los afectos cotidianos.</p>
-<p>Para llegar y sustentar esto, te contaré reflexiones sobre algunas de las cárceles que recorrí y tuve la oportunidad de visitar.</p>
-<p>Acá les tengo que hacer un spoiler y contarles lo aprendido cuando digo que el punitivismo (el ojo por ojo) no solo se construye desde el Estado, sino desde los afectos cotidianos.</p>
-<p>Para llegar y sustentar esto, te contaré reflexiones sobre algunas de las cárceles que recorrí y tuve la oportunidad de visitar.</p>
+<p>En mi caso, elegí las cárceles. Pues, después de mucha rumiación, encontré en mi planeación de segundo semestre el sueño de entrar a esta clínica y bueno, hay que rescatar el asombro y los sueños de esos primeros semestres.</p>
+<p>Antes de empezar el recorrido, les hago un spoiler, pienso que el punitivismo (el ojo por ojo) no solo se construye desde el Estado, sino desde los afectos cotidianos.</p>
+
     <p>Mi primera cárcel: La Picota.</p>
 
      <a class="P2" href="P2.html">Mi primera cárcel: La Picota.</a>
 
      <div class="círculo"></div>
+
+<script>
+    const tituloPrincipal = document.querySelector("#titulo-principal");
+
+    function reproducirAnimacionTitulo() {
+        tituloPrincipal.classList.remove("animar");
+        void tituloPrincipal.offsetWidth;
+        tituloPrincipal.classList.add("animar");
+    }
+
+    tituloPrincipal.addEventListener("click", reproducirAnimacionTitulo);
+    tituloPrincipal.addEventListener("animationend", () => {
+        tituloPrincipal.classList.remove("animar");
+    });
+    tituloPrincipal.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            reproducirAnimacionTitulo();
+        }
+    });
+</script>
 </body>
 </html>

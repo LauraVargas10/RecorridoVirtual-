@@ -3,6 +3,35 @@
 
 body {
      background-image: url("ASSETS/FONDO.png");
+    animation: entrada 700ms ease both;
+}
+
+body.saliendo {
+    animation: salida 350ms ease both;
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes salida {
+    to {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation-duration: 0.01ms;
+    }
 }
 title {
     font-family: 'Fleur De Leah', cursive;
@@ -34,6 +63,23 @@ h1:hover {
     animation-name: animación2;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+}
+
+#titulo-principal {
+    cursor: pointer;
+    background-color: #FBC02D;
+    animation: none;
+}
+
+#titulo-principal:hover {
+    color: inherit;
+    background-color: #FBC02D;
+    animation: none;
+}
+
+#titulo-principal.animar,
+#titulo-principal.animar:hover {
+    animation: animación3 2s 1;
 }
 
 #galeria1{

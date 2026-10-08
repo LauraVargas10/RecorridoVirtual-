@@ -19,6 +19,46 @@ img {
     width: 50%;
     height: auto;
 }
+.marco-modelo {
+    display: block;
+    width: 50%;
+    max-width: 100%;
+    margin: 16px 0;
+    padding: 8px;
+    box-sizing: border-box;
+    background: linear-gradient(
+        90deg,
+        #E40303,
+        #FF8C00,
+        #FFED00,
+        #008026,
+        #004DFF,
+        #750787,
+        #E40303
+    );
+    background-size: 300% 100%;
+    animation: recorrer-arcoiris 6s linear infinite;
+}
+.marco-modelo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@keyframes recorrer-arcoiris {
+    to {
+        background-position: 300% 0;
+    }
+}
+@media (max-width: 600px) {
+    .marco-modelo {
+        width: 90%;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .marco-modelo {
+        animation: none;
+    }
+}
 p {
     font-family:fantasy
 }
